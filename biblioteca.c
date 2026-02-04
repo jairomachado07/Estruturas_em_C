@@ -12,6 +12,7 @@ struct Livro {
     char autor[TAM_STRING];
     char editora[TAM_STRING];
     int edicao;
+    int disponivel; // 1 para disponível, 0 para não disponível
 };
 
 //Função para limpar o buffer do teclado
