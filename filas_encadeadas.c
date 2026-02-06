@@ -19,8 +19,7 @@ int main() {
 
     terceiro->dado = 30;
     terceiro->proximo = NULL;
-
-    // Percorrendo a lista
+        // Percorrendo a lista
     struct No* atual = primeiro;
     while (atual != NULL) {
         printf("%d\n", atual->dado);
@@ -28,4 +27,12 @@ int main() {
     }
 
     return 0;
+} 
+    //Inserção de uma nova estrutura de dados
+void listar(struct No* inicio) {
+    struct No* atual = inicio;
+    while (atual != NULL) {
+        printf("%d\n", atual->dado);
+        atual = atual->proximo;
+    }
 } 
