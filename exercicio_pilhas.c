@@ -74,7 +74,7 @@ void pop(Pilha *pilha, Pessoa pessoaRemovida) {
         printf("Pilha vazia! Não é possível remover pessoas.\n");
         return;
     }
-    *pessoaRemovida = pilha->itens[pilha->topo];
+    Pessoa *pessoaRemovida = &pilha->itens[pilha->topo];
     pilha->topo--;
 }
 
@@ -83,7 +83,7 @@ void peek(Pilha *pilha, Pessoa pessoaVisualizada) {
         printf("Pilha vazia! Não há pessoas para mostrar.\n");
         return;
     }
-    *pessoaVisualizada = pilha->itens[pilha->topo];
+    Pessoa *pessoaVisualizada = &pilha->itens[pilha->topo];
 }
 
 void mostrarPilha(Pilha *pilha) {
